@@ -398,3 +398,25 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+
+# object files
+*.o
+*.obj
+
+# linter settings
+.clangd
+compile_commands.json
+
+# executables
+*.out
+*.exe
+
+# ide settings
+.vscode
+.idea
+
+# cmake
+.cache
+build/
+out/

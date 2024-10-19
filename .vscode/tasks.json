@@ -10,12 +10,13 @@
                 "-g", // compile
                 //"${file}", // -> the file to compile
                 "${workspaceFolder}/*.cpp",  // -> to compile all files
-                "${workspaceFolder}\\glad.c",
+                "${workspaceFolder}/utils/*.cpp",  // -> to compile all files
+                // "${workspaceFolder}\\glad.c",
                 "-std=c++17", // might be neded for glad glfw
                 "-I./include", //include
                 "-L./lib", //library
                 // "src/\\*.cpp", // source
-                // "glad.c", // source glad
+                "glad.c", // source glad
                 "-lglfw3dll", // library glwf
                 "-o", // output
                 "${fileDirname}\\${fileBasenameNoExtension}.exe" // the path/name/extention of the output
