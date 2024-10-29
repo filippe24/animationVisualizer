@@ -11,9 +11,17 @@
                 //"${file}", // -> the file to compile
                 "${workspaceFolder}/*.cpp",  // -> to compile all files
                 "${workspaceFolder}/utils/*.cpp",  // -> to compile all files
+                // "${workspaceFolder}/src/*.cpp",  
+                "${workspaceFolder}/inputOutput/*.cpp",  
+                // "${workspaceFolder}/coreElements/*.cpp",  
+                "${workspaceFolder}/thirdParty/imgui/*.cpp", //imgui
                 // "${workspaceFolder}\\glad.c",
                 "-std=c++17", // might be neded for glad glfw
                 "-I./include", //include
+                "-I./third_party/imgui", //include
+                "-I./third_party/imgui/backends", //include
+                "-I${workspaceFolder}/third_party/imgui", // imgui include
+                "-I${workspaceFolder}/third_party/imgui/backends", 
                 "-L./lib", //library
                 // "src/\\*.cpp", // source
                 "glad.c", // source glad
